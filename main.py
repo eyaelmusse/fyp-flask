@@ -29,13 +29,13 @@ def home():
         except:
             pass
 
-        # java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
-        # java8 = f"{java8_home}/bin/java"
-        # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
-        # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
-
+        java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
+        java8 = f"{java8_home}/bin/java"
+        java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
+        java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
+        #
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
-        ckjm_comm = f"java -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
+        ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
         os.system(ckjm_comm)
 
         with open(os.path.join(current_dir, "ckjm_output.csv"), 'w') as ckjm_csv:
@@ -47,22 +47,22 @@ def home():
                 lines = (line.split(" ") for line in stripped if line)
                 lines = (line for line in lines if line[0] != '~')
                 writer.writerows(lines)
-        #
-        # os.environ["JAVA_HOME"] = java8_home
-        # evosuite_comm = f"{java8} -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests -Dtools_jar_location={java8_tools} -Dshow_progress=false"
-        # if lib_provided:
-        #     evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
-        # os.system(evosuite_comm)
-        #
-        # try:
-        #     data1 = pd.read_csv(f'{current_dir}/statistics.csv')
-        # except:
-        #     data1 = None
-        # data2 = pd.read_csv(f'{current_dir}/ckjm_output.csv')
-        #
-        # merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
-        # merged_output.to_csv(f'{current_dir}/merged_output.csv')
-        #
+
+        os.environ["JAVA_HOME"] = java8_home
+        evosuite_comm = f"{java8} -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests -Dtools_jar_location={java8_tools} -Dshow_progress=false"
+        if lib_provided:
+            evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
+        os.system(evosuite_comm)
+
+        try:
+            data1 = pd.read_csv(f'{current_dir}/statistics.csv')
+        except:
+            data1 = None
+        data2 = pd.read_csv(f'{current_dir}/ckjm_output.csv')
+
+        merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
+        merged_output.to_csv(f'{current_dir}/merged_output.csv')
+
         # return redirect(f"/result/{current_id}")
         return redirect("/")
     return render_template("home.html")
