@@ -40,7 +40,7 @@ def home():
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
         # ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
-        command = ["java", "-jar", "runable-ckjm_ext-2.5.jar"]
+        command = [java18, "-jar", "runable-ckjm_ext-2.5.jar"]
         result = subprocess.run(command, capture_output=True, text=True, check=True)
         # os.system(ckjm_comm)
 
