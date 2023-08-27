@@ -4,6 +4,7 @@ import csv
 import uuid
 import pandas as pd
 import zipfile
+import subprocess
 
 app = Flask(__name__)
 
@@ -38,8 +39,10 @@ def home():
         java18 = "jdk-18.0.2.1/bin/javac"
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
-        ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
-        os.system(ckjm_comm)
+        # ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
+        command = ["java", "-jar", "runable-ckjm_ext-2.5.jar"]
+        result = subprocess.run(command, capture_output=True, text=True, check=True)
+        # os.system(ckjm_comm)
 
         with open(os.path.join(current_dir, "ckjm_output.csv"), 'w') as ckjm_csv:
             writer = csv.writer(ckjm_csv)
