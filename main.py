@@ -29,7 +29,7 @@ def home():
         except:
             pass
 
-        # java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
+        java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
         # java8 = f"{java8_home}/bin/java"
         # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
         # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
