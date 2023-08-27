@@ -34,6 +34,9 @@ def home():
         # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
         # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
 
+        java8_home = "/opt/java/openjdk8"
+        java8 = "/opt/java/openjdk8/bin/java"
+        java8_tools = "/opt/java/openjdk8/lib/tools.jar"
         java18 = "/opt/java/openjdk/bin/java"
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
@@ -50,7 +53,7 @@ def home():
                 lines = (line for line in lines if line[0] != '~')
                 writer.writerows(lines)
 
-        # os.environ["JAVA_HOME"] = java8_home
+        os.environ["JAVA_HOME"] = java8_home
         # evosuite_comm = f"{java8} -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests -Dtools_jar_location={java8_tools} -Dshow_progress=false"
         # if lib_provided:
         #     evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
