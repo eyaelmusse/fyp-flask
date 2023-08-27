@@ -39,7 +39,7 @@ def home():
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
         # ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
-        ckjm_comm = f"java -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
+        ckjm_comm = f"railway run java -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
         os.system(ckjm_comm)
 
         with open(os.path.join(current_dir, "ckjm_output.csv"), 'w') as ckjm_csv:
