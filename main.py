@@ -34,7 +34,8 @@ def home():
         # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
         # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
 
-        java18 = "jdk-18.0.1.jdk/Contents/Home/bin/java"
+        # java18 = "jdk-18.0.1.jdk/Contents/Home/bin/java"
+        java18 = "jdk-18.0.2.1/bin/java"
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
         ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
