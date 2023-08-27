@@ -35,10 +35,11 @@ def home():
         # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
 
         # java18 = "jdk-18.0.1.jdk/Contents/Home/bin/java"
-        java18 = "jdk-18.0.2.1/bin/java"
+        # java18 = "jdk-18.0.2.1/bin/java"
 
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
-        ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
+        # ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
+        ckjm_comm = f"java -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
         os.system(ckjm_comm)
 
         with open(os.path.join(current_dir, "ckjm_output.csv"), 'w') as ckjm_csv:
@@ -80,4 +81,4 @@ def result(id):
         return render_template("result.html", csv=reader)
 
 if __name__ == '__main__':
-  app.run(port=5000)
+  app.run(port=8000)
