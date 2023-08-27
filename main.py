@@ -72,7 +72,7 @@ def home():
 
         java8 = "/opt/java/openjdk8/bin/java"
         # evosuite_comm = f"{java8} -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests -Dtools_jar_location={java8_tools} -Dshow_progress=false"
-        evosuite_comm = f"railway run java -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests"
+        evosuite_comm = f"java -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests"
         if lib_provided:
             evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
         os.system(evosuite_comm)
