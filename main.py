@@ -59,11 +59,11 @@ def home():
 
         # evosuite_comm = f"  -Dtools_jar_location={java8_tools}"
 
-        # evo_command = ["java", "-jar", "evosuite-1.0.6.jar", "-target", temp_file_path, "-criterion", "branch", "-Dreport_dir={current_dir}", "-Dtest_dir={current_dir}/tests", "-Dshow_progress=false"]
+        evo_command = ["java", "-jar", "evosuite-1.0.6.jar", "-target", temp_file_path, "-criterion", "branch", "-Dreport_dir={current_dir}", "-Dtest_dir={current_dir}/tests", "-Dshow_progress=false"]
         # # if lib_provided:
-        # #     evo_command += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
-        # with cjdk.java_env(vendor="temurin", version="8.0.372"):
-        #     subprocess.run(evo_command, check=True)
+        #     evo_command += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
+        with cjdk.java_env(vendor="temurin", version="8.0.372"):
+            subprocess.run(evo_command, check=True)
 
         # try:
         #     data1 = pd.read_csv(f'{current_dir}/statistics.csv')
