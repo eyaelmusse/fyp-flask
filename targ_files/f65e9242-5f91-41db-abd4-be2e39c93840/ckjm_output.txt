@@ -1,0 +1,612 @@
+net.kencochrane.a4j.beans.Authors 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String[] getAuthor(): 2
+ ~ public String toString(): 5
+ ~ public String getAuthor(int index): 2
+ ~ public void setAuthor(String[] newString): 2
+ ~ public void <init>(): 1
+ ~ public java.util.ArrayList getAuthorsArray(): 1
+
+net.kencochrane.a4j.beans.ThirdPartyProductDetails 24 1 0 2 32 254 1 1 24 0.9239 276 0.0000 1 0.0000 0.7292 0 0 10.0000
+ ~ public void setSellerNickname(String sellerNickname): 1
+ ~ public void setConditionType(String conditionType): 1
+ ~ public String getExchangeAvailability(): 1
+ ~ public void setSellerState(String sellerState): 1
+ ~ public String getSellerId(): 1
+ ~ public void setExchangeId(String exchangeId): 1
+ ~ public String getExchangeId(): 1
+ ~ public void setSellerCountry(String sellerCountry): 1
+ ~ public void setShipComments(String shipComments): 1
+ ~ public String getCondition(): 1
+ ~ public String getSellerCountry(): 1
+ ~ public String toString(): 1
+ ~ public String getOfferingPrice(): 1
+ ~ public void setOfferingPrice(String offeringPrice): 1
+ ~ public String getShipComments(): 1
+ ~ public String getSellerRating(): 1
+ ~ public void setCondition(String condition): 1
+ ~ public String getConditionType(): 1
+ ~ public String getSellerNickname(): 1
+ ~ public void setExchangeAvailability(String exchangeAvailability): 1
+ ~ public void setSellerId(String sellerId): 1
+ ~ public void <init>(): 1
+ ~ public String getSellerState(): 1
+ ~ public void setSellerRating(String sellerRating): 1
+
+net.kencochrane.a4j.beans.BrowseList 5 1 0 2 21 4 1 1 5 0.2500 130 0.0000 0 0.0000 0.6000 0 0 24.8000
+ ~ public void setBrowseNode(net.kencochrane.a4j.beans.BrowseNode[] browseNode): 2
+ ~ public String toString(): 5
+ ~ public java.util.ArrayList getBrowseNodeList(): 1
+ ~ public void <init>(): 1
+ ~ public net.kencochrane.a4j.beans.BrowseNode[] getBrowseNode(): 1
+
+net.kencochrane.a4j.beans.Directors 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String toString(): 5
+ ~ public java.util.ArrayList getDirectorsArray(): 1
+ ~ public void setDirector(String[] newString): 2
+ ~ public String getDirector(int index): 2
+ ~ public void <init>(): 1
+ ~ public String[] getDirector(): 2
+
+net.kencochrane.a4j.beans.RecentlyViewed 5 1 0 1 13 0 0 1 5 0.0000 77 1.0000 0 0.0000 0.4667 0 0 14.2000
+ ~ public boolean isInList(String asin): 7
+ ~ public void addProduct(net.kencochrane.a4j.beans.MiniProduct miniProd): 3
+ ~ public java.util.ArrayList getProducts(): 1
+ ~ public int getNumProducts(): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.SimilarProducts 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String toString(): 5
+ ~ public void setProduct(String[] newString): 2
+ ~ public java.util.ArrayList getProductsArray(): 1
+ ~ public String[] getProduct(): 2
+ ~ public void <init>(): 1
+ ~ public String getProduct(int index): 2
+
+net.kencochrane.a4j.util.LoadProperties 5 1 0 3 15 6 3 0 2 0.8333 97 0.3333 1 0.0000 0.5000 0 0 17.8000
+ ~ private void setDefaultProperties(java.util.Properties props): 1
+ ~ protected void <init>(): 2
+ ~ public java.util.Properties getProperties(): 1
+ ~ static void <clinit>(): 1
+ ~ public static net.kencochrane.a4j.util.LoadProperties instance(): 2
+
+net.kencochrane.a4j.util.a4jUtil 7 1 0 6 28 21 5 1 7 2.0000 163 0.0000 0 0.0000 0.6190 0 0 22.2857
+ ~ public String dencodeString(String searchTerm): 1
+ ~ public String encodeString(String searchTerm): 1
+ ~ public String URLFriendlyName(String name): 1
+ ~ public String arrayToCommaString(java.util.ArrayList list): 6
+ ~ public String stripString(String allowedChars, String string): 3
+ ~ public void <init>(): 1
+ ~ public java.math.BigDecimal getPrice(String price): 1
+
+net.kencochrane.a4j.beans.SellerProfileDetails 16 1 0 2 25 72 1 1 16 0.8571 185 1.0000 1 0.0000 0.4792 0 0 10.1250
+ ~ public String getStoreId(): 1
+ ~ public void setSellerNickname(String sellerNickname): 1
+ ~ public void setOverallFeedbackRating(String overallFeedbackRating): 1
+ ~ public String getOverallFeedbackRating(): 1
+ ~ public String getNumberOfFeedback(): 1
+ ~ public void setStoreId(String storeId): 1
+ ~ public String getNumberofCanceledAuctions(): 1
+ ~ public String toString(): 1
+ ~ public void setNumberofCanceledAuctions(String numberofCanceledAuctions): 1
+ ~ public String getStoreName(): 1
+ ~ public net.kencochrane.a4j.beans.SellerFeedback getSellerFeedBack(): 1
+ ~ public void setNumberOfFeedback(String numberOfFeedback): 1
+ ~ public String getSellerNickname(): 1
+ ~ public void setStoreName(String storeName): 1
+ ~ public void setSellerFeedBack(net.kencochrane.a4j.beans.SellerFeedback sellerFeedBack): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.DAO.Search 14 1 0 7 27 91 2 5 14 2.0000 335 0.0000 0 0.0000 0.9643 0 0 22.9286
+ ~ public net.kencochrane.a4j.beans.ProductInfo ArtistSearch(String artistName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo AuthorSearch(String authorName, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo ManufactureSearch(String manufactureName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo SimilaritesSearch(String asin, String page): 2
+ ~ public net.kencochrane.a4j.beans.SellerSearch ThirdParty(String sellerId, String type, String page, String status): 2
+ ~ public net.kencochrane.a4j.beans.ProductInfo UpcSearch(String upc, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo Keyword(String searchTerm, String productLine, String type, String page): 2
+ ~ public net.kencochrane.a4j.beans.ProductInfo ActorSearch(String actorName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.BlendedSearch Blended(String searchTerm, String type): 2
+ ~ public net.kencochrane.a4j.beans.ProductInfo Generic(String searchType, String searchTerm, String mode, String type, String page, String offer): 2
+ ~ public net.kencochrane.a4j.beans.ProductInfo ListmaniaSearch(String listId): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo WishListSearch(String wishListId): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo DirectorSearch(String directorName, String mode, String page): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.Reviews 9 1 0 2 24 26 1 1 9 0.7813 155 0.2500 1 0.0000 0.4444 0 0 15.7778
+ ~ public String toString(): 3
+ ~ public void setAvgCustomerRating(String avgCustomerRating): 1
+ ~ public net.kencochrane.a4j.beans.CustomerReview[] getCustomerReview(): 1
+ ~ public String getAvgCustomerRating(): 1
+ ~ public String getTotalCustomerReviews(): 1
+ ~ public java.util.ArrayList getReviewsArrayList(): 1
+ ~ public void <init>(): 1
+ ~ public void setTotalCustomerReviews(String totalCustomerReviews): 1
+ ~ public void setCustomerReview(net.kencochrane.a4j.beans.CustomerReview[] customerReview): 2
+
+net.kencochrane.a4j.beans.MiniProduct 14 1 0 3 18 59 3 0 14 0.8590 93 0.0000 0 0.0000 0.7143 0 0 5.2143
+ ~ public void setName(String name): 1
+ ~ public String getPrice(): 1
+ ~ public String getAsin(): 1
+ ~ public void setImageURL(String imageURL): 1
+ ~ public String getName(): 1
+ ~ public void setAsin(String asin): 1
+ ~ public void setProductUrl(String productUrl): 1
+ ~ public void setPrice(String price): 1
+ ~ public String getProductUrl(): 1
+ ~ public String toString(): 1
+ ~ public String getImageURL(): 1
+ ~ public void setManufacturer(String manufacturer): 1
+ ~ public void <init>(): 1
+ ~ public String getManufacturer(): 1
+
+net.kencochrane.a4j.beans.SellerProfile 4 1 0 1 13 0 0 1 4 0.0000 39 1.0000 1 0.0000 0.6250 0 0 8.5000
+ ~ public void setSellerProfileDetails(net.kencochrane.a4j.beans.SellerProfileDetails sellerProfile): 1
+ ~ public String toString(): 1
+ ~ public net.kencochrane.a4j.beans.SellerProfileDetails getSellerProfileDetails(): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.file.FileUtil 25 1 0 5 63 208 3 2 25 0.4583 1536 1.0000 0 0.0000 0.5200 0 0 60.3600
+ ~ public boolean downloadSimilaritesFile(String asin, String page, String saveFileName): 3
+ ~ public java.io.FileInputStream fetchSimilarItems(String asin, String page): 2
+ ~ public java.io.File getAccessories(String asin, java.util.ArrayList asins): 7
+ ~ public java.io.File downloadCart(String cartQuery): 4
+ ~ public boolean downloadOneASINFile(String asin, String type, String offer, String page, String saveFileName): 3
+ ~ public void deleteFile(String fileName): 3
+ ~ public java.io.FileInputStream fetchKeywordSearchFile(String searchTerm, String productLine, String type, String page): 2
+ ~ public java.io.FileInputStream fetchAccessories(String asin, java.util.ArrayList asins): 2
+ ~ public boolean downloadBrowseNodeFile(String mode, String node, String page, String saveFileName): 3
+ ~ public void renameFile(String oldFileName, String newFileName): 3
+ ~ public java.io.FileInputStream fetchBNFile(String mode, String node, String page): 2
+ ~ public boolean downloadAccessoriesFile(String asin, java.util.ArrayList asins, String saveFileName): 3
+ ~ public java.io.File getSimilarItems(String asin, String page): 7
+ ~ public boolean isAgeGood(java.io.File file): 4
+ ~ public java.io.File downloadBlendedSearchFile(String searchTerm, String type): 4
+ ~ public java.io.FileInputStream fetchThirdPartySearchFile(String sellerId, String type, String page, String status): 2
+ ~ public java.io.File getBrowseNodeFile(String mode, String node, String page): 7
+ ~ public java.io.File downloadGenericSearchFile(String searchType, String searchTerm, String mode, String type, String page, String offer): 4
+ ~ public java.io.FileInputStream fetchASINFile(String asin, String type, String offer, String page): 2
+ ~ public java.io.File getASINFile(String asin, String type, String offer, String page): 7
+ ~ public java.io.File downloadKeywordSearchFile(String searchTerm, String productLine, String type, String page): 4
+ ~ public java.io.FileInputStream fetchGenericSearchFile(String searchType, String searchTerm, String mode, String type, String page, String offer): 2
+ ~ public void <init>(): 1
+ ~ public java.io.File downloadThirdPartySearchFile(String sellerId, String type, String page, String status): 4
+ ~ public java.io.FileInputStream fetchBlendedSearchFile(String searchTerm, String type): 2
+
+net.kencochrane.a4j.beans.FullProduct 10 1 0 4 21 0 2 2 10 0.5926 140 0.0000 1 0.0000 0.3750 0 0 12.7000
+ ~ public void setDetails(net.kencochrane.a4j.beans.ProductDetails details): 1
+ ~ public void addSimilarItem(net.kencochrane.a4j.beans.MiniProduct item): 1
+ ~ public void addAccessory(net.kencochrane.a4j.beans.MiniProduct product): 1
+ ~ public java.util.ArrayList getSimilarItems(): 1
+ ~ public void printFullProduct(): 7
+ ~ public net.kencochrane.a4j.beans.ProductDetails getDetails(): 1
+ ~ public void setSimilarItems(java.util.ArrayList similarItems): 1
+ ~ public java.util.ArrayList getAccessories(): 1
+ ~ public void setAccessories(java.util.ArrayList accessories): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.Lists 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String getListId(int index): 2
+ ~ public String toString(): 5
+ ~ public void setListId(String[] newListId): 2
+ ~ public java.util.ArrayList getListsArray(): 1
+ ~ public String[] getListId(): 2
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.data.Query 15 1 0 4 38 0 2 2 14 0.6905 1106 0.8889 1 0.0000 0.6889 0 0 72.1333
+ ~ public String ClearCart(String cartId, String hmac): 1
+ ~ public String sendRequest(String string): 2
+ ~ public String AddtoCart(String ASIN, String quantity): 1
+ ~ public String browseNodeQueryGenerator(String type, String page, String offer, String mode, String browseNode): 1
+ ~ public String AddToExistingCart(String ASIN, String quantity, String cartId, String hmac): 1
+ ~ public String GetItemsFromCart(String cartId, String hmac): 1
+ ~ public String SearchQueryGenerator(String searchType, String searchTerm, String mode, String type, String page, String offer): 1
+ ~ protected String generateMultipleSearchString(String searchType, java.util.ArrayList searchValues): 5
+ ~ public String BlendedSearchGenerator(String type, String searchTerm): 1
+ ~ public String RemoveFromCart(String itemId, String cartId, String hmac): 1
+ ~ public String SearchThirdPartyGenerator(String sellerId, String type, String page, String status): 1
+ ~ public String queryGenerator(String searchType, String type, String page, String offer, java.util.ArrayList searchValues): 1
+ ~ public void <init>(): 1
+ ~ public String KeywordSearchGenerator(String searchTerm, String productLine, String type, String page): 1
+ ~ public String ModifyCart(String itemId, String quantity, String cartId, String hmac): 1
+
+net.kencochrane.a4j.A4j 19 1 0 8 41 171 0 8 19 2.0000 197 0.0000 0 0.0000 0.9737 0 0 9.3684
+ ~ public net.kencochrane.a4j.beans.BlendedSearch BlendedSearch(String searchTerm, String type): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo ArtistSearch(String artistName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart RemoveFromCart(String hmac, String cartId, String itemId): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo AuthorSearch(String authorName, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo ManufactureSearch(String manufactureName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.SellerSearch ThirdParty(String sellerId, String type, String page, String status): 1
+ ~ public net.kencochrane.a4j.beans.FullProduct getFullProductFromASIN(String asin, String offer, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo UpcSearch(String upc, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo ActorSearch(String actorName, String mode, String page): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo ListmaniaSearch(String listId): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart GetItemsFromCart(String hmac, String cartId): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo WishListSearch(String wishListId): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart AddtoCart(String asin, String quantity): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo KeywordSearch(String searchTerm, String productLine, String type, String page): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart modifyCart(String hmac, String cartId, String itemId, String quantity): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo DirectorSearch(String directorName, String mode, String page): 1
+ ~ public void <init>(): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart addToExistingCart(String cartId, String hmac, String asin, String quantity): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart clearCart(String hmac, String cartId): 1
+
+net.kencochrane.a4j.beans.BrowseNode 15 1 0 1 27 41 1 0 15 0.7429 200 1.0000 0 0.0000 0.3667 0 0 12.0000
+ ~ public void setMode(String mode): 1
+ ~ public void setSubNodes(java.util.ArrayList array): 1
+ ~ public void setBrowseId(String browseId): 1
+ ~ public net.kencochrane.a4j.beans.BrowseNode getSubNode(String browseId): 5
+ ~ public java.util.ArrayList getSubNodes(): 1
+ ~ public void addSubNode(net.kencochrane.a4j.beans.BrowseNode sNode): 1
+ ~ public void setBrowseName(String browseName): 1
+ ~ public java.util.ArrayList getParentNodes(): 1
+ ~ public String getBrowseId(): 1
+ ~ public void printNode(): 4
+ ~ public String getBrowseName(): 1
+ ~ public String toString(): 1
+ ~ public String getMode(): 1
+ ~ public void <init>(): 1
+ ~ public void setParentNodes(java.util.ArrayList parentNodes): 1
+
+net.kencochrane.a4j.beans.ListingProductInfo 4 1 0 2 9 0 1 1 4 0.3333 46 1.0000 0 0.0000 0.6250 0 0 10.2500
+ ~ public net.kencochrane.a4j.beans.ListingProductDetails[] getListingProductDetails(): 1
+ ~ public void <init>(): 1
+ ~ public void setListingProductDetails(net.kencochrane.a4j.beans.ListingProductDetails[] listingProductDetails): 2
+ ~ public java.util.ArrayList getListingProductDetailsArray(): 1
+
+net.kencochrane.a4j.beans.ProductDetails 101 1 0 16 134 4880 3 13 101 0.9765 1506 1.0000 13 0.0000 0.0983 0 0 13.4356
+ ~ public String getUsedCount(): 1
+ ~ public String getMpn(): 1
+ ~ public void setMpn(String mpn): 1
+ ~ public net.kencochrane.a4j.beans.Starring getStarring(): 1
+ ~ public net.kencochrane.a4j.beans.Tracks getTracks(): 1
+ ~ public void setUrl(String url): 1
+ ~ public String getAgeGroup(): 1
+ ~ public String getSalesRank(): 1
+ ~ public void setAsin(String asin): 1
+ ~ public net.kencochrane.a4j.beans.Reviews getReviews(): 1
+ ~ public String getUrl(): 1
+ ~ public void setSimilarProducts(net.kencochrane.a4j.beans.SimilarProducts similarProducts): 1
+ ~ public void setUsedPrice(String usedPrice): 1
+ ~ public String getNumberOfItems(): 1
+ ~ public void setManufacturer(String manufacturer): 1
+ ~ public void setDirectors(net.kencochrane.a4j.beans.Directors directors): 1
+ ~ public net.kencochrane.a4j.beans.Accessories getAccessories(): 1
+ ~ public void setImageUrlSmall(String imageUrlSmall): 1
+ ~ public net.kencochrane.a4j.beans.Authors getAuthors(): 1
+ ~ public String getRefurbishedPrice(): 1
+ ~ public void setBrowseList(net.kencochrane.a4j.beans.BrowseList browseList): 1
+ ~ public void setAuthors(net.kencochrane.a4j.beans.Authors authors): 1
+ ~ public void setLists(net.kencochrane.a4j.beans.Lists lists): 1
+ ~ public void setProductName(String productName): 1
+ ~ public void setEsrbRating(String esrbRating): 1
+ ~ public String getReadingLevel(): 1
+ ~ public String getAvailability(): 1
+ ~ public String toString(): 1
+ ~ public String getStatus(): 1
+ ~ public String getEsrbRating(): 1
+ ~ public void setThirdPartyProductInfo(net.kencochrane.a4j.beans.ThirdPartyProductInfo thirdPartyProductInfo): 1
+ ~ public void setAgeGroup(String ageGroup): 1
+ ~ public void setMedia(String media): 1
+ ~ public void setOurPrice(String ourPrice): 1
+ ~ public String getTheatricalReleaseDate(): 1
+ ~ public void setReadingLevel(String readingLevel): 1
+ ~ public void setCatalog(String catalog): 1
+ ~ public void setUpc(String upc): 1
+ ~ public net.kencochrane.a4j.beans.Features getFeatures(): 1
+ ~ public void setEncoding(String encoding): 1
+ ~ public void setSalesRank(String salesRank): 1
+ ~ public String getEncoding(): 1
+ ~ public void <init>(): 1
+ ~ public void setStarring(net.kencochrane.a4j.beans.Starring starring): 1
+ ~ public net.kencochrane.a4j.beans.Artists getArtists(): 1
+ ~ public String getImageUrlSmall(): 1
+ ~ public void setRefurbishedCount(String refurbishedCount): 1
+ ~ public void setPlatforms(net.kencochrane.a4j.beans.Platforms platforms): 1
+ ~ public String getOurPrice(): 1
+ ~ public void setNumberOfItems(String numberOfItems): 1
+ ~ public void setRefurbishedPrice(String refurbishedPrice): 1
+ ~ public String getNumberOfOfferings(): 1
+ ~ public void setImageUrlLarge(String imageUrlLarge): 1
+ ~ public void setAvailability(String availability): 1
+ ~ public String getManufacturer(): 1
+ ~ public void setUsedCount(String usedCount): 1
+ ~ public String getIsbn(): 1
+ ~ public String getAsin(): 1
+ ~ public void setListPrice(String listPrice): 1
+ ~ public net.kencochrane.a4j.beans.SimilarProducts getSimilarProducts(): 1
+ ~ public String getCatalog(): 1
+ ~ public String getMedia(): 1
+ ~ public String getListPrice(): 1
+ ~ public String getRecommendation(): 11
+ ~ public String getProductName(): 1
+ ~ public void setReleaseDate(String releaseDate): 1
+ ~ public String getUpc(): 1
+ ~ public void setImageUrlMedium(String imageUrlMedium): 1
+ ~ public String getImageUrlLarge(): 1
+ ~ public String getCollectiblePrice(): 1
+ ~ public String getUsedPrice(): 1
+ ~ public String getSavings(): 3
+ ~ public void setArtists(net.kencochrane.a4j.beans.Artists artists): 1
+ ~ public net.kencochrane.a4j.beans.BrowseList getBrowseList(): 1
+ ~ public void setThirdPartyNewPrice(String thirdPartyNewPrice): 1
+ ~ public void setDistributor(String distributor): 1
+ ~ public void setCollectibleCount(String collectibleCount): 1
+ ~ public net.kencochrane.a4j.beans.Directors getDirectors(): 1
+ ~ public net.kencochrane.a4j.beans.ThirdPartyProductInfo getThirdPartyProductInfo(): 1
+ ~ public void setReviews(net.kencochrane.a4j.beans.Reviews reviews): 1
+ ~ public void setCollectiblePrice(String collectiblePrice): 1
+ ~ public String getThirdPartyNewPrice(): 1
+ ~ public String getCollectibleCount(): 1
+ ~ public void setNumberOfOfferings(String numberOfOfferings): 1
+ ~ public String getRefurbishedCount(): 1
+ ~ public void setFeatures(net.kencochrane.a4j.beans.Features features): 1
+ ~ public String getRatingsImgURL(): 5
+ ~ public net.kencochrane.a4j.beans.Lists getLists(): 1
+ ~ public net.kencochrane.a4j.beans.Platforms getPlatforms(): 1
+ ~ public String getReleaseDate(): 1
+ ~ public void setIsbn(String isbn): 1
+ ~ public String getThirdPartyNewCount(): 1
+ ~ public void setMpaaRating(String mpaaRating): 1
+ ~ public String getImageUrlMedium(): 1
+ ~ public void setTheatricalReleaseDate(String theatricalReleaseDate): 1
+ ~ public String getDistributor(): 1
+ ~ public void setThirdPartyNewCount(String thirdPartyNewCount): 1
+ ~ public void setStatus(String status): 1
+ ~ public void setTracks(net.kencochrane.a4j.beans.Tracks tracks): 1
+ ~ public String getMpaaRating(): 1
+ ~ public void setAccessories(net.kencochrane.a4j.beans.Accessories accessories): 1
+
+net.kencochrane.a4j.beans.Artists 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public void setArtist(String[] newArtist): 2
+ ~ public String[] getArtist(): 2
+ ~ public String getArtist(int index): 2
+ ~ public String toString(): 5
+ ~ public java.util.ArrayList getArtistsArray(): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.Tracks 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String[] getTrack(): 2
+ ~ public String toString(): 5
+ ~ public String getTrack(int index): 2
+ ~ public void setTrack(String[] newTracks): 2
+ ~ public void <init>(): 1
+ ~ public java.util.ArrayList getTracksArray(): 1
+
+net.kencochrane.a4j.beans.SellerSearch 4 1 0 3 9 0 2 1 4 0.3333 46 1.0000 0 0.0000 0.6250 0 0 10.2500
+ ~ public net.kencochrane.a4j.beans.SellerSearchDetails[] getSellerSearchDetails(): 1
+ ~ public void setSellerSearchDetails(net.kencochrane.a4j.beans.SellerSearchDetails[] sellerSearch): 2
+ ~ public java.util.ArrayList getSellerSearchDetailsArray(): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.CustomerReview 8 1 0 2 17 22 1 1 8 0.7857 94 0.7500 1 0.0000 0.6875 0 0 10.2500
+ ~ public String toString(): 1
+ ~ public void setRating(String rating): 1
+ ~ public void setSummary(String summary): 1
+ ~ public void setComment(String comment): 2
+ ~ public String getRating(): 1
+ ~ public void <init>(): 1
+ ~ public String getComment(): 1
+ ~ public String getSummary(): 1
+
+net.kencochrane.a4j.beans.Item 21 1 0 3 31 176 2 1 21 0.9278 155 1.0000 0 0.0000 0.7143 0 0 5.9524
+ ~ public String getMerchantSku(): 1
+ ~ public void setMerchantSku(String merchantSku): 1
+ ~ public void setCatalog(String catalog): 1
+ ~ public String getAsin(): 1
+ ~ public void setQuantity(String quantity): 1
+ ~ public void setAsin(String asin): 1
+ ~ public void setExchangeId(String exchangeId): 1
+ ~ public void setListPrice(String listPrice): 1
+ ~ public String getExchangeId(): 1
+ ~ public String getCatalog(): 1
+ ~ public String getListPrice(): 1
+ ~ public String getOurPrice(): 1
+ ~ public void setItemId(String itemId): 1
+ ~ public String getProductName(): 1
+ ~ public void setProductName(String productName): 1
+ ~ public String toString(): 1
+ ~ public String getCleanPrice(): 1
+ ~ public String getQuantity(): 1
+ ~ public String getItemId(): 1
+ ~ public void setOurPrice(String ourPrice): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.DAO.Cart 7 1 0 6 27 21 1 5 7 2.0000 409 0.0000 0 0.0000 0.9286 0 0 57.4286
+ ~ public net.kencochrane.a4j.beans.ShoppingCart RemoveFromCart(String hmac, String cartId, String itemId): 4
+ ~ public net.kencochrane.a4j.beans.ShoppingCart AddtoCart(String asin, String quantity): 4
+ ~ public net.kencochrane.a4j.beans.ShoppingCart modifyCart(String hmac, String cartId, String itemId, String quantity): 5
+ ~ public void <init>(): 1
+ ~ public net.kencochrane.a4j.beans.ShoppingCart addToExistingCart(String cartId, String hmac, String asin, String quantity): 4
+ ~ public net.kencochrane.a4j.beans.ShoppingCart GetItemsFromCart(String hmac, String cartId): 4
+ ~ public net.kencochrane.a4j.beans.ShoppingCart clearCart(String hmac, String cartId): 4
+
+net.kencochrane.a4j.beans.Items 5 1 0 2 16 0 1 1 5 0.0000 91 0.0000 0 0.0000 0.6000 0 0 17.0000
+ ~ public String toString(): 5
+ ~ public net.kencochrane.a4j.beans.Item[] getItem(): 1
+ ~ public java.util.ArrayList getItemsArrayList(): 1
+ ~ public void <init>(): 1
+ ~ public void setItem(net.kencochrane.a4j.beans.Item[] item): 2
+
+net.kencochrane.a4j.beans.Mode 7 1 0 1 9 11 1 0 7 0.7778 39 1.0000 0 0.0000 0.4762 0 0 4.1429
+ ~ public String getModeName(): 1
+ ~ public java.util.ArrayList getSubNodes(): 1
+ ~ public void setModeName(String modeName): 1
+ ~ public void setSubNodes(java.util.ArrayList nodes): 1
+ ~ public String getDefaultNode(): 1
+ ~ public void <init>(): 1
+ ~ public void setDefaultNode(String defaultNode): 1
+
+net.kencochrane.a4j.beans.Starring 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String toString(): 5
+ ~ public String getActor(int index): 2
+ ~ public void setActor(String[] newString): 2
+ ~ public String[] getActor(): 2
+ ~ public void <init>(): 1
+ ~ public java.util.ArrayList getActorsArray(): 1
+
+net.kencochrane.a4j.DAO.Product 2 1 0 9 37 1 1 8 2 2.0000 231 0.0000 0 0.0000 0.7500 0 0 114.5000
+ ~ public net.kencochrane.a4j.beans.FullProduct getProduct(String asin, String offer, String page): 16
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.Platforms 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String[] getPlatform(): 2
+ ~ public String toString(): 5
+ ~ public void setPlatform(String[] newString): 2
+ ~ public java.util.ArrayList getPlatformsArray(): 1
+ ~ public String getPlatform(int index): 2
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.ProductLine 7 1 0 2 16 0 1 1 7 0.5000 93 0.0000 1 0.0000 0.4286 0 0 12.0000
+ ~ public void setMode(String mode): 1
+ ~ public String toString(): 1
+ ~ public String getMode(): 1
+ ~ public void setProductInfo(net.kencochrane.a4j.beans.ProductInfo productInfo): 1
+ ~ public net.kencochrane.a4j.beans.ProductInfo getProductInfo(): 1
+ ~ public String printProductList(): 1
+ ~ public void <init>(): 1
+
+net.kencochrane.a4j.beans.BlendedSearch 6 1 0 3 22 9 2 1 6 0.2000 169 0.0000 0 0.0000 0.5833 0 0 27.0000
+ ~ public String toString(): 3
+ ~ public net.kencochrane.a4j.beans.ProductLine[] getProductLine(): 1
+ ~ public String printProductList(): 3
+ ~ public void setProductLine(net.kencochrane.a4j.beans.ProductLine[] productLine): 2
+ ~ public void <init>(): 1
+ ~ public java.util.ArrayList getProductLinesArrayList(): 1
+
+net.kencochrane.a4j.beans.ShoppingCartResponse 3 1 0 2 4 1 1 1 3 0.5000 14 0.0000 1 0.0000 0.6667 0 0 3.3333
+ ~ public net.kencochrane.a4j.beans.ShoppingCart getShoppingCart(): 1
+ ~ public void <init>(): 1
+ ~ public void setShoppingCart(net.kencochrane.a4j.beans.ShoppingCart shoppingCart): 1
+
+net.kencochrane.a4j.beans.ShoppingCart 13 1 0 6 39 30 3 3 13 0.7708 303 0.0000 1 0.0000 0.4615 0 0 22.0000
+ ~ public String getPurchaseURL(): 1
+ ~ public void setPurchaseURL(String purchaseURL): 1
+ ~ public String toString(): 1
+ ~ public String getCartId(): 1
+ ~ public String getTotalCartCost(): 5
+ ~ public String getNumItems(): 6
+ ~ public void setCartId(String cartId): 1
+ ~ public net.kencochrane.a4j.beans.Items getItems(): 1
+ ~ public void setHMAC(String HMAC): 1
+ ~ public net.kencochrane.a4j.beans.Item getItem(String itemId): 6
+ ~ public void setItems(net.kencochrane.a4j.beans.Items items): 1
+ ~ public void <init>(): 1
+ ~ public String getHMAC(): 1
+
+net.kencochrane.a4j.beans.ModeList 4 1 0 1 13 0 0 1 4 0.0000 61 0.0000 0 0.0000 0.5000 0 0 14.0000
+ ~ public java.util.ArrayList getAllModes(): 1
+ ~ public void addMode(net.kencochrane.a4j.beans.Mode mode): 1
+ ~ public void <init>(): 1
+ ~ public net.kencochrane.a4j.beans.Mode getMode(String modeName): 5
+
+net.kencochrane.a4j.beans.SellerFeedback 5 1 0 2 20 4 1 1 5 0.2500 105 1.0000 0 0.0000 0.6000 0 0 19.8000
+ ~ public String toString(): 3
+ ~ public void setFeedback(net.kencochrane.a4j.beans.FeedBack[] feedback): 2
+ ~ public java.util.ArrayList getFeedbackArrayList(): 1
+ ~ public void <init>(): 1
+ ~ public net.kencochrane.a4j.beans.FeedBack[] getFeedback(): 1
+
+net.kencochrane.a4j.beans.Features 6 1 0 1 21 0 1 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String toString(): 5
+ ~ public String getFeature(int index): 2
+ ~ public void <init>(): 1
+ ~ public java.util.ArrayList getFeaturesArray(): 1
+ ~ public String[] getFeature(): 2
+ ~ public void setFeature(String[] newString): 2
+
+net.kencochrane.a4j.beans.SellerSearchDetails 11 1 0 2 12 45 1 1 11 0.9000 54 1.0000 1 0.0000 0.4848 0 0 3.4545
+ ~ public String getStoreId(): 1
+ ~ public void setSellerNickname(String sellerNickname): 1
+ ~ public String getStoreName(): 1
+ ~ public String getSellerNickname(): 1
+ ~ public void setStoreName(String storeName): 1
+ ~ public void setNumberOfOpenListings(String numberOfOpenListings): 1
+ ~ public void setListingProductInfo(net.kencochrane.a4j.beans.ListingProductInfo listingProductInfo): 1
+ ~ public net.kencochrane.a4j.beans.ListingProductInfo getListingProductInfo(): 1
+ ~ public void <init>(): 1
+ ~ public void setStoreId(String storeId): 1
+ ~ public String getNumberOfOpenListings(): 1
+
+net.kencochrane.a4j.beans.ListingProductDetails 40 1 0 1 47 670 1 0 40 0.9501 462 1.0000 0 0.0000 0.7375 0 0 10.0750
+ ~ public void setExchangeSellerCountry(String exchangeSellerCountry): 1
+ ~ public void setExchangeStatus(String exchangeStatus): 1
+ ~ public void setExchangeStartDate(String exchangeStartDate): 1
+ ~ public String getExchangeStatus(): 1
+ ~ public void setExchangeSellerId(String exchangeSellerId): 1
+ ~ public void setListingId(String listingId): 1
+ ~ public String getExchangePrice(): 1
+ ~ public String getExchangeEndDate(): 1
+ ~ public String getExchangeStartDate(): 1
+ ~ public String getExchangeSellerState(): 1
+ ~ public String toString(): 1
+ ~ public String getExchangeSellerNickname(): 1
+ ~ public String getExchangeAsin(): 1
+ ~ public String getExchangeSellerId(): 1
+ ~ public void setExchangeTitle(String exchangeTitle): 1
+ ~ public void setExchangeOfferingType(String exchangeOfferingType): 1
+ ~ public void setExchangeSellerState(String exchangeSellerState): 1
+ ~ public void setExchangePrice(String exchangePrice): 1
+ ~ public void setExchangeQuantity(String exchangeQuantity): 1
+ ~ public void setExchangeFeaturedCategory(String exchangeFeaturedCategory): 1
+ ~ public String getExchangeAvailability(): 1
+ ~ public String getExchangeSellerRating(): 1
+ ~ public void setExchangeSellerRating(String exchangeSellerRating): 1
+ ~ public String getListingId(): 1
+ ~ public String getExchangeQuantityAllocated(): 1
+ ~ public String getExchangeQuantity(): 1
+ ~ public void setExchangeEndDate(String exchangeEndDate): 1
+ ~ public String getExchangeSellerCountry(): 1
+ ~ public void setExchangeId(String exchangeId): 1
+ ~ public String getExchangeId(): 1
+ ~ public void setExchangeSellerNickname(String exchangeSellerNickname): 1
+ ~ public void setExchangeQuantityAllocated(String exchangeQuantityAllocated): 1
+ ~ public String getExchangeTitle(): 1
+ ~ public String getExchangeFeaturedCategory(): 1
+ ~ public void setExchangeAvailability(String exchangeAvailability): 1
+ ~ public void <init>(): 1
+ ~ public String getExchangeOfferingType(): 1
+ ~ public void setExchangeAsin(String exchangeAsin): 1
+ ~ public String getExchangeConditionType(): 1
+ ~ public void setExchangeConditionType(String exchangeConditionType): 1
+
+net.kencochrane.a4j.beans.Accessories 6 1 0 2 21 0 2 0 6 0.2000 137 0.0000 0 0.0000 0.4444 0 0 21.6667
+ ~ public String toString(): 5
+ ~ public java.util.ArrayList getAccessoryArray(): 1
+ ~ public String[] getAccessory(): 2
+ ~ public String getAccessory(int index): 2
+ ~ public void <init>(): 1
+ ~ public void setAccessory(String[] newString): 2
+
+net.kencochrane.a4j.beans.FeedBack 10 1 0 1 17 21 1 0 10 0.7778 116 1.0000 0 0.0000 0.7000 0 0 10.2000
+ ~ public String getFeedbackComments(): 1
+ ~ public String toString(): 1
+ ~ public void setFeedbackRating(String feedbackRating): 1
+ ~ public void setFeedbackRater(String feedbackRater): 1
+ ~ public void setFeedbackDate(String feedbackDate): 1
+ ~ public void setFeedbackComments(String feedbackComments): 1
+ ~ public String getFeedbackDate(): 1
+ ~ public String getFeedbackRating(): 1
+ ~ public void <init>(): 1
+ ~ public String getFeedbackRater(): 1
+
+net.kencochrane.a4j.beans.ProductInfo 12 1 0 5 30 54 4 1 12 0.8182 272 0.0000 1 0.0000 0.4444 0 0 21.2500
+ ~ public String toString(): 3
+ ~ public void setTotalPages(String totalPages): 1
+ ~ public void setListName(String listName): 1
+ ~ public java.util.ArrayList getProductsArrayList(): 1
+ ~ public net.kencochrane.a4j.beans.ProductDetails[] getDetails(): 1
+ ~ public void setDetails(net.kencochrane.a4j.beans.ProductDetails[] productDetails): 2
+ ~ public String getTotalResults(): 1
+ ~ public String getTotalPages(): 1
+ ~ public String printProductList(): 3
+ ~ public void <init>(): 1
+ ~ public void setTotalResults(String totalResults): 1
+ ~ public String getListName(): 1
+
+net.kencochrane.a4j.beans.ThirdPartyProductInfo 5 1 0 2 20 4 1 1 5 0.2500 105 1.0000 0 0.0000 0.6000 0 0 19.8000
+ ~ public String toString(): 3
+ ~ public void setThirdPartyProductDetails(net.kencochrane.a4j.beans.ThirdPartyProductDetails[] products): 2
+ ~ public net.kencochrane.a4j.beans.ThirdPartyProductDetails[] getThirdPartyProductDetails(): 1
+ ~ public java.util.ArrayList getProductsArrayList(): 1
+ ~ public void <init>(): 1
+

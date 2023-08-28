@@ -31,25 +31,11 @@ def home():
         except:
             pass
 
-        # java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
-        # java8 = f"{java8_home}/bin/java"
-        # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
-        # java18 = "/Library/Java/JavaVirtualMachines/jdk-18.0.1.jdk/Contents/Home/bin/java"
-
-        # java18 = "jdk-18.0.1.jdk/Contents/Home/bin/java"
-        # java18 = "jdk-18.0.2.1/bin/javac"
-
         ckjm_output = os.path.join(current_dir, "ckjm_output.txt")
-        # ckjm_comm = f"{java18} -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
-        # command = [java18, "-jar", "runable-ckjm_ext-2.5.jar"]
-        # result = subprocess.run(command, capture_output=True, text=True, check=True)
-        # os.system(ckjm_comm)
-
-        # ckjm_comm = f"cjdk --jdk=temurin-jre:17 exec java -jar runable-ckjm_ext-2.5.jar {temp_file_path} > {ckjm_output}"
-        # os.system(ckjm_comm)
-
+        ckjm_command = ["java", "-jar", "runable-ckjm_ext-2.5.jar", temp_file_path]
         with cjdk.java_env(vendor="temurin-jre", version="17.0.3"):
-            subprocess.run(["java", "-jar", "runable-ckjm_ext-2.5.jar", temp_file_path, ">", ckjm_output], check=True)
+            with open(ckjm_output, "w") as output_file:
+                subprocess.run(ckjm_command, stdout=output_file, check=True)
 
         with open(os.path.join(current_dir, "ckjm_output.csv"), 'w') as ckjm_csv:
             writer = csv.writer(ckjm_csv)
@@ -61,22 +47,34 @@ def home():
                 lines = (line for line in lines if line[0] != '~')
                 writer.writerows(lines)
 
+        # java8_home = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home"
+        # java8 = f"{java8_home}/bin/java"
+        # java8_tools = "/Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/lib/tools.jar"
+
         # os.environ["JAVA_HOME"] = java8_home
         # evosuite_comm = f"{java8} -jar evosuite-1.0.6.jar -target {temp_file_path} -criterion branch -Dreport_dir={current_dir} -Dtest_dir={current_dir}/tests -Dtools_jar_location={java8_tools} -Dshow_progress=false"
         # if lib_provided:
         #     evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
         # os.system(evosuite_comm)
-        #
-        # try:
-        #     data1 = pd.read_csv(f'{current_dir}/statistics.csv')
-        # except:
-        #     data1 = None
-        # data2 = pd.read_csv(f'{current_dir}/ckjm_output.csv')
-        #
-        # merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
-        # merged_output.to_csv(f'{current_dir}/merged_output.csv')
-        #
-        # return redirect(f"/result/{current_id}")
+
+        # evosuite_comm = f"  -Dtools_jar_location={java8_tools} -Dshow_progress=false"
+
+        evo_command = ["java", "-jar", "evosuite-1.0.6.jar", "-target", temp_file_path, "-criterion", "branch", "-Dreport_dir={current_dir}", "-Dtest_dir={current_dir}/tests"]
+        # if lib_provided:
+        #     evo_command += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
+        with cjdk.java_env(vendor="temurin", version="8.0.372"):
+            subprocess.run(evo_command, check=True)
+
+        try:
+            data1 = pd.read_csv(f'{current_dir}/statistics.csv')
+        except:
+            data1 = None
+        data2 = pd.read_csv(f'{current_dir}/ckjm_output.csv')
+
+        merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
+        merged_output.to_csv(f'{current_dir}/merged_output.csv')
+
+        return redirect(f"/result/{current_id}")
 
 
         return redirect("/")

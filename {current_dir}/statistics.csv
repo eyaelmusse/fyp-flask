@@ -1,0 +1,3 @@
+TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
+net.kencochrane.a4j.A4j,BRANCH,1.0,19,19
+net.kencochrane.a4j.DAO.Cart,BRANCH,0.23076923076923078,39,9
