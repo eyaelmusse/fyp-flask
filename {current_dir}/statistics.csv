@@ -5,3 +5,12 @@ net.kencochrane.a4j.DAO.Product,BRANCH,0.0967741935483871,31,3
 net.kencochrane.a4j.DAO.Search,BRANCH,0.7894736842105263,19,15
 net.kencochrane.a4j.beans.Accessories,BRANCH,0.9375,16,15
 net.kencochrane.a4j.beans.Artists,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.Authors,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.BlendedSearch,BRANCH,1.0,13,13
+net.kencochrane.a4j.beans.BrowseList,BRANCH,1.0,13,13
+net.kencochrane.a4j.beans.BrowseNode,BRANCH,1.0,27,27
+net.kencochrane.a4j.beans.CustomerReview,BRANCH,1.0,9,9
+net.kencochrane.a4j.beans.Directors,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.Features,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.FeedBack,BRANCH,1.0,10,10
+net.kencochrane.a4j.beans.FullProduct,BRANCH,1.0,21,21
