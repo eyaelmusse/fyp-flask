@@ -57,9 +57,9 @@ def home():
         #     evosuite_comm += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
         # os.system(evosuite_comm)
 
-        # evosuite_comm = f"  -Dtools_jar_location={java8_tools} -Dshow_progress=false"
+        # evosuite_comm = f"  -Dtools_jar_location={java8_tools}"
 
-        evo_command = ["java", "-jar", "evosuite-1.0.6.jar", "-target", temp_file_path, "-criterion", "branch", "-Dreport_dir={current_dir}", "-Dtest_dir={current_dir}/tests"]
+        evo_command = ["java", "-jar", "evosuite-1.0.6.jar", "-target", temp_file_path, "-criterion", "branch", "-Dreport_dir={current_dir}", "-Dtest_dir={current_dir}/tests", "-Dshow_progress=false"]
         # if lib_provided:
         #     evo_command += f" -projectCP $(ls {current_dir}/lib/*.jar | tr '\n' ':')"
         with cjdk.java_env(vendor="temurin", version="8.0.372"):

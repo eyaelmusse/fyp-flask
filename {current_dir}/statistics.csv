@@ -1,3 +1,7 @@
 TARGET_CLASS,criterion,Coverage,Total_Goals,Covered_Goals
 net.kencochrane.a4j.A4j,BRANCH,1.0,19,19
 net.kencochrane.a4j.DAO.Cart,BRANCH,0.23076923076923078,39,9
+net.kencochrane.a4j.DAO.Product,BRANCH,0.0967741935483871,31,3
+net.kencochrane.a4j.DAO.Search,BRANCH,0.7894736842105263,19,15
+net.kencochrane.a4j.beans.Accessories,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.Artists,BRANCH,0.9375,16,15
