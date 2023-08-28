@@ -14,3 +14,11 @@ net.kencochrane.a4j.beans.Directors,BRANCH,0.9375,16,15
 net.kencochrane.a4j.beans.Features,BRANCH,0.9375,16,15
 net.kencochrane.a4j.beans.FeedBack,BRANCH,1.0,10,10
 net.kencochrane.a4j.beans.FullProduct,BRANCH,1.0,21,21
+net.kencochrane.a4j.beans.Item,BRANCH,1.0,21,21
+net.kencochrane.a4j.beans.Items,BRANCH,1.0,13,13
+net.kencochrane.a4j.beans.ListingProductDetails,BRANCH,1.0,40,40
+net.kencochrane.a4j.beans.ListingProductInfo,BRANCH,1.0,5,5
+net.kencochrane.a4j.beans.Lists,BRANCH,0.9375,16,15
+net.kencochrane.a4j.beans.MiniProduct,BRANCH,1.0,14,14
+net.kencochrane.a4j.beans.Mode,BRANCH,1.0,7,7
+net.kencochrane.a4j.beans.ModeList,BRANCH,1.0,11,11

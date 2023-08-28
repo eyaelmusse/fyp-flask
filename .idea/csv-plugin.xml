@@ -17,6 +17,20 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/targ_files/ckjm_output.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/targ_files/f65e9242-5f91-41db-abd4-be2e39c93840/ckjm_output.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/{current_dir}/statistics.csv">
           <value>
             <Attribute>

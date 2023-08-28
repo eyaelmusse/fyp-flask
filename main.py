@@ -74,7 +74,7 @@ def home():
         # merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
         # merged_output.to_csv(f'{current_dir}/merged_output.csv')
 
-        data1 = None
+        data1 = pd.read_csv("targ_files/ckjm_output.csv")
         data2 = pd.read_csv(f'{current_dir}/ckjm_output.csv')
 
         merged_output = pd.merge(data1, data2, on='TARGET_CLASS', how='outer')
