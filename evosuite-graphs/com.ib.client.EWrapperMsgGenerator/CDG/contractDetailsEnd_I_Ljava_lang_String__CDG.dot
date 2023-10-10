@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB132 T_BYTE ... ARETURN l293-l293" ];
+  2 [ label="EntryBlock for method contractDetailsEnd(I)Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}

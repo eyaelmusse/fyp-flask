@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB139 T_BYTE ... ARETURN l347-l347" ];
+  2 [ label="EntryBlock for method receiveFA(ILjava/lang/String;)Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}

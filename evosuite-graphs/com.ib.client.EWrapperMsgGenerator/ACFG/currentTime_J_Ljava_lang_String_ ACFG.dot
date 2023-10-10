@@ -1,0 +1,22 @@
+digraph G {
+  1 [ label="BB145 T_BYTE ... ARETURN l408-l407" ];
+  2 [ label="BB146 T_BYTE INVOKESTATIC GOTO l408-l408" ];
+  3 [ label="BB147 T_BYTE ... IFEQ l407-l408" ];
+  4 [ label="BB148 T_BYTE INVOKESTATIC l408-l408" ];
+  5 [ label="BB149 T_BYTE ... IFEQ l408-l408" ];
+  6 [ label="BB150 T_BYTE INVOKESPECIAL l408-l408" ];
+  7 [ label="BB151 T_BYTE ... GOTO l408-l408" ];
+  8 [ label="EntryBlock for method currentTime(J)Ljava/lang/String;" ];
+  9 [ label="ExitBlock for method currentTime(J)Ljava/lang/String;" ];
+  6 -> 1 [ label="" ];
+  7 -> 1 [ label="" ];
+  3 -> 2 [ label="" ];
+  2 -> 5 [ label="" ];
+  3 -> 4 [ label="" ];
+  4 -> 5 [ label="" ];
+  5 -> 7 [ label="" ];
+  5 -> 6 [ label="" ];
+  8 -> 9 [ label="" ];
+  8 -> 3 [ label="" ];
+  1 -> 9 [ label="" ];
+}

@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB129 T_BYTE ... ARETURN l225-l240" ];
+  2 [ label="EntryBlock for method contractDetailsMsg(Lcom/ib/client/ContractDetails;)Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}

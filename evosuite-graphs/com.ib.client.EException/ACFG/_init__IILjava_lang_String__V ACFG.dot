@@ -1,0 +1,8 @@
+digraph G {
+  1 [ label="BB9 T_BYTE ... RETURN l39-l43" ];
+  2 [ label="EntryBlock for method <init>(IILjava/lang/String;)V" ];
+  3 [ label="ExitBlock for method <init>(IILjava/lang/String;)V" ];
+  2 -> 3 [ label="" ];
+  2 -> 1 [ label="" ];
+  1 -> 3 [ label="" ];
+}

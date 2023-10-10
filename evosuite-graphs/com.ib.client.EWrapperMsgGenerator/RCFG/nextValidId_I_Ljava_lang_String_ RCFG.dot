@@ -1,0 +1,23 @@
+digraph G {
+  1 [ label="I0 (0) LABEL L2057949353" ];
+  2 [ label="I1 (0) LINE  212" ];
+  3 [ label="I2 (0) NEW java/lang/StringBuilder l212" ];
+  4 [ label="I3 (3) DUP l212" ];
+  5 [ label="I4 (4) INVOKESPECIAL java/lang/StringBuilder.<init>()V l212" ];
+  6 [ label="I5 (7) LDC Next Valid Order ID:  Type=T_SHORT l212" ];
+  7 [ label="I6 (9) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l212" ];
+  8 [ label="I7 (12) ILOAD 0 l212" ];
+  9 [ label="I8 (13) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l212" ];
+  10 [ label="I9 (16) INVOKEVIRTUAL java/lang/StringBuilder.toString()Ljava/lang/String; l212" ];
+  11 [ label="I10 (19) ARETURN l212" ];
+  1 -> 2 [ label="" ];
+  2 -> 3 [ label="" ];
+  3 -> 4 [ label="" ];
+  4 -> 5 [ label="" ];
+  5 -> 6 [ label="" ];
+  6 -> 7 [ label="" ];
+  7 -> 8 [ label="" ];
+  8 -> 9 [ label="" ];
+  9 -> 10 [ label="" ];
+  10 -> 11 [ label="" ];
+}

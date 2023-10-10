@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB141 T_BYTE ... ARETURN l365-l365" ];
+  2 [ label="EntryBlock for method realtimeBar(IJDDDDJDI)Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}

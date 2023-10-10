@@ -1,0 +1,269 @@
+digraph G {
+  1 [ label="I0 (0) LABEL L1374649878" ];
+  2 [ label="I1 (0) LINE  297" ];
+  3 [ label="I2 (0) NEW java/lang/StringBuilder l297" ];
+  4 [ label="I3 (3) DUP l297" ];
+  5 [ label="I4 (4) INVOKESPECIAL java/lang/StringBuilder.<init>()V l297" ];
+  6 [ label="I5 (7) LDC  ---- Execution Details begin ----
+reqId =  Type=T_SHORT l297" ];
+  7 [ label="I6 (9) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  8 [ label="I7 (12) ILOAD 0 l297" ];
+  9 [ label="I8 (13) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  10 [ label="I9 (16) LDC 
+orderId =  Type=T_SHORT l297" ];
+  11 [ label="I10 (18) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  12 [ label="I11 (21) ALOAD 2 l297" ];
+  13 [ label="I12 (22) Field com/ib/client/Execution.m_orderId Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  14 [ label="I13 (25) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  15 [ label="I14 (28) LDC 
+clientId =  Type=T_SHORT l297" ];
+  16 [ label="I15 (30) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  17 [ label="I16 (33) ALOAD 2 l297" ];
+  18 [ label="I17 (34) Field com/ib/client/Execution.m_clientId Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  19 [ label="I18 (37) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  20 [ label="I19 (40) LDC 
+symbol =  Type=T_SHORT l297" ];
+  21 [ label="I20 (42) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  22 [ label="I21 (45) ALOAD 1 l297" ];
+  23 [ label="I22 (46) Field com/ib/client/Contract.m_symbol Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  24 [ label="I23 (49) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  25 [ label="I24 (52) LDC 
+secType =  Type=T_SHORT l297" ];
+  26 [ label="I25 (54) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  27 [ label="I26 (57) ALOAD 1 l297" ];
+  28 [ label="I27 (58) Field com/ib/client/Contract.m_secType Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  29 [ label="I28 (61) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  30 [ label="I29 (64) LDC 
+expiry =  Type=T_SHORT l297" ];
+  31 [ label="I30 (66) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  32 [ label="I31 (69) ALOAD 1 l297" ];
+  33 [ label="I32 (70) Field com/ib/client/Contract.m_expiry Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  34 [ label="I33 (73) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  35 [ label="I34 (76) LDC 
+strike =  Type=T_SHORT l297" ];
+  36 [ label="I35 (78) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  37 [ label="I36 (81) ALOAD 1 l297" ];
+  38 [ label="I37 (82) Field com/ib/client/Contract.m_strike Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  39 [ label="I38 (85) INVOKEVIRTUAL java/lang/StringBuilder.append(D)Ljava/lang/StringBuilder; l297" ];
+  40 [ label="I39 (88) LDC 
+right =  Type=T_SHORT l297" ];
+  41 [ label="I40 (90) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  42 [ label="I41 (93) ALOAD 1 l297" ];
+  43 [ label="I42 (94) Field com/ib/client/Contract.m_right Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  44 [ label="I43 (97) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  45 [ label="I44 (100) LDC 
+contractExchange =  Type=T_SHORT l297" ];
+  46 [ label="I45 (102) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  47 [ label="I46 (105) ALOAD 1 l297" ];
+  48 [ label="I47 (106) Field com/ib/client/Contract.m_exchange Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  49 [ label="I48 (109) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  50 [ label="I49 (112) LDC 
+currency =  Type=T_SHORT l297" ];
+  51 [ label="I50 (114) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  52 [ label="I51 (117) ALOAD 1 l297" ];
+  53 [ label="I52 (118) Field com/ib/client/Contract.m_currency Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  54 [ label="I53 (121) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  55 [ label="I54 (124) LDC 
+localSymbol =  Type=T_SHORT l297" ];
+  56 [ label="I55 (126) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  57 [ label="I56 (129) ALOAD 1 l297" ];
+  58 [ label="I57 (130) Field com/ib/client/Contract.m_localSymbol Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  59 [ label="I58 (133) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  60 [ label="I59 (136) LDC 
+execId =  Type=T_SHORT l297" ];
+  61 [ label="I60 (138) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  62 [ label="I61 (141) ALOAD 2 l297" ];
+  63 [ label="I62 (142) Field com/ib/client/Execution.m_execId Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  64 [ label="I63 (145) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  65 [ label="I64 (148) LDC 
+time =  Type=T_SHORT l297" ];
+  66 [ label="I65 (150) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  67 [ label="I66 (153) ALOAD 2 l297" ];
+  68 [ label="I67 (154) Field com/ib/client/Execution.m_time Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  69 [ label="I68 (157) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  70 [ label="I69 (160) LDC 
+acctNumber =  Type=T_SHORT l297" ];
+  71 [ label="I70 (162) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  72 [ label="I71 (165) ALOAD 2 l297" ];
+  73 [ label="I72 (166) Field com/ib/client/Execution.m_acctNumber Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  74 [ label="I73 (169) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  75 [ label="I74 (172) LDC 
+executionExchange =  Type=T_SHORT l297" ];
+  76 [ label="I75 (174) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  77 [ label="I76 (177) ALOAD 2 l297" ];
+  78 [ label="I77 (178) Field com/ib/client/Execution.m_exchange Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  79 [ label="I78 (181) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  80 [ label="I79 (184) LDC 
+side =  Type=T_SHORT l297" ];
+  81 [ label="I80 (186) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  82 [ label="I81 (189) ALOAD 2 l297" ];
+  83 [ label="I82 (190) Field com/ib/client/Execution.m_side Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  84 [ label="I83 (193) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  85 [ label="I84 (196) LDC 
+shares =  Type=T_SHORT l297" ];
+  86 [ label="I85 (198) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  87 [ label="I86 (201) ALOAD 2 l297" ];
+  88 [ label="I87 (202) Field com/ib/client/Execution.m_shares Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  89 [ label="I88 (205) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  90 [ label="I89 (208) LDC 
+price =  Type=T_SHORT l297" ];
+  91 [ label="I90 (210) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  92 [ label="I91 (213) ALOAD 2 l297" ];
+  93 [ label="I92 (214) Field com/ib/client/Execution.m_price Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  94 [ label="I93 (217) INVOKEVIRTUAL java/lang/StringBuilder.append(D)Ljava/lang/StringBuilder; l297" ];
+  95 [ label="I94 (220) LDC 
+permId =  Type=T_SHORT l297" ];
+  96 [ label="I95 (222) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  97 [ label="I96 (225) ALOAD 2 l297" ];
+  98 [ label="I97 (226) Field com/ib/client/Execution.m_permId Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  99 [ label="I98 (229) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  100 [ label="I99 (232) LDC 
+liquidation =  Type=T_SHORT l297" ];
+  101 [ label="I100 (234) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  102 [ label="I101 (237) ALOAD 2 l297" ];
+  103 [ label="I102 (238) Field com/ib/client/Execution.m_liquidation Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  104 [ label="I103 (241) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  105 [ label="I104 (244) LDC 
+cumQty =  Type=T_SHORT l297" ];
+  106 [ label="I105 (246) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  107 [ label="I106 (249) ALOAD 2 l297" ];
+  108 [ label="I107 (250) Field com/ib/client/Execution.m_cumQty Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  109 [ label="I108 (253) INVOKEVIRTUAL java/lang/StringBuilder.append(I)Ljava/lang/StringBuilder; l297" ];
+  110 [ label="I109 (256) LDC 
+avgPrice =  Type=T_SHORT l297" ];
+  111 [ label="I110 (258) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  112 [ label="I111 (261) ALOAD 2 l297" ];
+  113 [ label="I112 (262) Field com/ib/client/Execution.m_avgPrice Type=T_BOOLEAN, Opcode=GETFIELD l297" ];
+  114 [ label="I113 (265) INVOKEVIRTUAL java/lang/StringBuilder.append(D)Ljava/lang/StringBuilder; l297" ];
+  115 [ label="I114 (268) LDC 
+ ---- Execution Details end ----
+ Type=T_SHORT l297" ];
+  116 [ label="I115 (270) INVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder; l297" ];
+  117 [ label="I116 (273) INVOKEVIRTUAL java/lang/StringBuilder.toString()Ljava/lang/String; l297" ];
+  118 [ label="I117 (276) ASTORE 3 l297" ];
+  119 [ label="I118 (277) LABEL L1272824988" ];
+  120 [ label="I119 (277) LINE  321" ];
+  121 [ label="I120 (277) ALOAD 3 l321" ];
+  122 [ label="I121 (278) ARETURN l321" ];
+  1 -> 2 [ label="" ];
+  2 -> 3 [ label="" ];
+  3 -> 4 [ label="" ];
+  4 -> 5 [ label="" ];
+  5 -> 6 [ label="" ];
+  6 -> 7 [ label="" ];
+  7 -> 8 [ label="" ];
+  8 -> 9 [ label="" ];
+  9 -> 10 [ label="" ];
+  10 -> 11 [ label="" ];
+  11 -> 12 [ label="" ];
+  12 -> 13 [ label="" ];
+  13 -> 14 [ label="" ];
+  14 -> 15 [ label="" ];
+  15 -> 16 [ label="" ];
+  16 -> 17 [ label="" ];
+  17 -> 18 [ label="" ];
+  18 -> 19 [ label="" ];
+  19 -> 20 [ label="" ];
+  20 -> 21 [ label="" ];
+  21 -> 22 [ label="" ];
+  22 -> 23 [ label="" ];
+  23 -> 24 [ label="" ];
+  24 -> 25 [ label="" ];
+  25 -> 26 [ label="" ];
+  26 -> 27 [ label="" ];
+  27 -> 28 [ label="" ];
+  28 -> 29 [ label="" ];
+  29 -> 30 [ label="" ];
+  30 -> 31 [ label="" ];
+  31 -> 32 [ label="" ];
+  32 -> 33 [ label="" ];
+  33 -> 34 [ label="" ];
+  34 -> 35 [ label="" ];
+  35 -> 36 [ label="" ];
+  36 -> 37 [ label="" ];
+  37 -> 38 [ label="" ];
+  38 -> 39 [ label="" ];
+  39 -> 40 [ label="" ];
+  40 -> 41 [ label="" ];
+  41 -> 42 [ label="" ];
+  42 -> 43 [ label="" ];
+  43 -> 44 [ label="" ];
+  44 -> 45 [ label="" ];
+  45 -> 46 [ label="" ];
+  46 -> 47 [ label="" ];
+  47 -> 48 [ label="" ];
+  48 -> 49 [ label="" ];
+  49 -> 50 [ label="" ];
+  50 -> 51 [ label="" ];
+  51 -> 52 [ label="" ];
+  52 -> 53 [ label="" ];
+  53 -> 54 [ label="" ];
+  54 -> 55 [ label="" ];
+  55 -> 56 [ label="" ];
+  56 -> 57 [ label="" ];
+  57 -> 58 [ label="" ];
+  58 -> 59 [ label="" ];
+  59 -> 60 [ label="" ];
+  60 -> 61 [ label="" ];
+  61 -> 62 [ label="" ];
+  62 -> 63 [ label="" ];
+  63 -> 64 [ label="" ];
+  64 -> 65 [ label="" ];
+  65 -> 66 [ label="" ];
+  66 -> 67 [ label="" ];
+  67 -> 68 [ label="" ];
+  68 -> 69 [ label="" ];
+  69 -> 70 [ label="" ];
+  70 -> 71 [ label="" ];
+  71 -> 72 [ label="" ];
+  72 -> 73 [ label="" ];
+  73 -> 74 [ label="" ];
+  74 -> 75 [ label="" ];
+  75 -> 76 [ label="" ];
+  76 -> 77 [ label="" ];
+  77 -> 78 [ label="" ];
+  78 -> 79 [ label="" ];
+  79 -> 80 [ label="" ];
+  80 -> 81 [ label="" ];
+  81 -> 82 [ label="" ];
+  82 -> 83 [ label="" ];
+  83 -> 84 [ label="" ];
+  84 -> 85 [ label="" ];
+  85 -> 86 [ label="" ];
+  86 -> 87 [ label="" ];
+  87 -> 88 [ label="" ];
+  88 -> 89 [ label="" ];
+  89 -> 90 [ label="" ];
+  90 -> 91 [ label="" ];
+  91 -> 92 [ label="" ];
+  92 -> 93 [ label="" ];
+  93 -> 94 [ label="" ];
+  94 -> 95 [ label="" ];
+  95 -> 96 [ label="" ];
+  96 -> 97 [ label="" ];
+  97 -> 98 [ label="" ];
+  98 -> 99 [ label="" ];
+  99 -> 100 [ label="" ];
+  100 -> 101 [ label="" ];
+  101 -> 102 [ label="" ];
+  102 -> 103 [ label="" ];
+  103 -> 104 [ label="" ];
+  104 -> 105 [ label="" ];
+  105 -> 106 [ label="" ];
+  106 -> 107 [ label="" ];
+  107 -> 108 [ label="" ];
+  108 -> 109 [ label="" ];
+  109 -> 110 [ label="" ];
+  110 -> 111 [ label="" ];
+  111 -> 112 [ label="" ];
+  112 -> 113 [ label="" ];
+  113 -> 114 [ label="" ];
+  114 -> 115 [ label="" ];
+  115 -> 116 [ label="" ];
+  116 -> 117 [ label="" ];
+  117 -> 118 [ label="" ];
+  118 -> 119 [ label="" ];
+  119 -> 120 [ label="" ];
+  120 -> 121 [ label="" ];
+  121 -> 122 [ label="" ];
+}

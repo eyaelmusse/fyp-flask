@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB7 T_BYTE ... RETURN l31-l32" ];
+  2 [ label="EntryBlock for method <init>(Ljava/lang/String;)V" ];
+  2 -> 1 [ label="" ];
+}

@@ -1,0 +1,28 @@
+digraph G {
+  1 [ label="BB15 T_BYTE LINE 51 ICONST_0 IRETURN l51-l51" ];
+  2 [ label="BB16 T_BYTE ... IF_ACMPNE l40-l40" ];
+  3 [ label="BB17 T_BYTE ... IFEQ l53-l53" ];
+  4 [ label="BB18 T_BYTE LINE 41 ICONST_1 IRETURN l41-l41" ];
+  5 [ label="BB19 T_BYTE LINE 44 ALOAD IFNULL l44-l44" ];
+  6 [ label="BB20 T_BYTE LINE 54 ICONST_0 IRETURN l54-l54" ];
+  7 [ label="BB21 ALOAD INSTANCEOF IFNE l44-l44" ];
+  8 [ label="BB22 T_BYTE ... IFEQ l56-l56" ];
+  9 [ label="BB23 T_BYTE LINE 45 ICONST_0 IRETURN l45-l45" ];
+  10 [ label="BB24 T_BYTE ... IF_ICMPEQ l48-l50" ];
+  11 [ label="BB25 T_BYTE LINE 57 ICONST_0 IRETURN l57-l57" ];
+  12 [ label="BB26 T_BYTE LINE 60 ICONST_1 IRETURN l60-l60" ];
+  13 [ label="EntryBlock for method equals(Ljava/lang/Object;)Z" ];
+  10 -> 1 [ label="CD I31 Branch 4 IF_ICMPEQ L50 - FALSE" ];
+  13 -> 2 [ label="" ];
+  10 -> 3 [ label="CD I31 Branch 4 IF_ICMPEQ L50 - TRUE" ];
+  2 -> 4 [ label="CD I4 Branch 1 IF_ACMPNE L40 - FALSE" ];
+  2 -> 5 [ label="CD I4 Branch 1 IF_ACMPNE L40 - TRUE" ];
+  3 -> 6 [ label="CD I43 Branch 5 IFEQ L53 - FALSE" ];
+  5 -> 7 [ label="CD I12 Branch 2 IFNULL L44 - FALSE" ];
+  3 -> 8 [ label="CD I43 Branch 5 IFEQ L53 - TRUE" ];
+  5 -> 9 [ label="CD I12 Branch 2 IFNULL L44 - TRUE" ];
+  7 -> 9 [ label="CD I15 Branch 3 IFNE L44 - FALSE" ];
+  7 -> 10 [ label="CD I15 Branch 3 IFNE L44 - TRUE" ];
+  8 -> 11 [ label="CD I55 Branch 6 IFEQ L56 - FALSE" ];
+  8 -> 12 [ label="CD I55 Branch 6 IFEQ L56 - TRUE" ];
+}

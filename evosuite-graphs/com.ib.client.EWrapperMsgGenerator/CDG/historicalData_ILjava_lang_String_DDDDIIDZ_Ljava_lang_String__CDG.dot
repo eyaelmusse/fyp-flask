@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB140 T_BYTE ... ARETURN l352-l352" ];
+  2 [ label="EntryBlock for method historicalData(ILjava/lang/String;DDDDIIDZ)Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}

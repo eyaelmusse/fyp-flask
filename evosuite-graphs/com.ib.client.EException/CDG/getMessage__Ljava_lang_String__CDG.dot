@@ -1,0 +1,5 @@
+digraph G {
+  1 [ label="BB12 T_BYTE ... ARETURN l68-l68" ];
+  2 [ label="EntryBlock for method getMessage()Ljava/lang/String;" ];
+  2 -> 1 [ label="" ];
+}
