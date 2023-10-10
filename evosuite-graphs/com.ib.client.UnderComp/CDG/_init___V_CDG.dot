@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB14 T_BYTE ... RETURN l32-l36" ];
-  2 [ label="EntryBlock for method <init>()V" ];
-  2 -> 1 [ label="" ];
-}

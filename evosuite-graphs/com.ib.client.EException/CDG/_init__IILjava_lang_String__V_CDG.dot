@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB9 T_BYTE ... RETURN l39-l43" ];
-  2 [ label="EntryBlock for method <init>(IILjava/lang/String;)V" ];
-  2 -> 1 [ label="" ];
-}

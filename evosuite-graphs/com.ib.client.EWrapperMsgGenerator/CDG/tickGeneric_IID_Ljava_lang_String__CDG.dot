@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB102 T_BYTE ... ARETURN l51-l51" ];
-  2 [ label="EntryBlock for method tickGeneric(IID)Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}

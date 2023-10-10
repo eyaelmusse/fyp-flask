@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB122 T_BYTE LINE 187 LDC ARETURN l187-l187" ];
-  2 [ label="EntryBlock for method openOrderEnd()Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}

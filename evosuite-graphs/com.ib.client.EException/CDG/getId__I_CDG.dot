@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB10 T_BYTE ... IRETURN l51-l51" ];
-  2 [ label="EntryBlock for method getId()I" ];
-  2 -> 1 [ label="" ];
-}

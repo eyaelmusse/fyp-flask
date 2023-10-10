@@ -1,8 +1,0 @@
-digraph G {
-  1 [ label="BB19 T_BYTE ... RETURN l45-l55" ];
-  2 [ label="EntryBlock for method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DDDLjava/lang/String;Ljava/lang/String;)V" ];
-  3 [ label="ExitBlock for method <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;DDDLjava/lang/String;Ljava/lang/String;)V" ];
-  2 -> 3 [ label="" ];
-  2 -> 1 [ label="" ];
-  1 -> 3 [ label="" ];
-}

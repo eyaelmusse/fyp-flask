@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB135 T_BYTE ... ARETURN l330-l330" ];
-  2 [ label="EntryBlock for method updateMktDepth(IIIIDI)Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}

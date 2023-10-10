@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB152 T_BYTE ... ARETURN l412-l412" ];
-  2 [ label="EntryBlock for method fundamentalData(ILjava/lang/String;)Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}

@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB124 T_BYTE ... ARETURN l197-l200" ];
-  2 [ label="EntryBlock for method updatePortfolio(Lcom/ib/client/Contract;IDDDDDLjava/lang/String;)Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}

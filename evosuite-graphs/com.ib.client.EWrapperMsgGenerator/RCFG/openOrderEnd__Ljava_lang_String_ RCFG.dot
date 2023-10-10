@@ -1,9 +1,0 @@
-digraph G {
-  1 [ label="I0 (0) LABEL L1043716929" ];
-  2 [ label="I1 (0) LINE  187" ];
-  3 [ label="I2 (0) LDC  =============== end =============== Type=T_SHORT l187" ];
-  4 [ label="I3 (2) ARETURN l187" ];
-  1 -> 2 [ label="" ];
-  2 -> 3 [ label="" ];
-  3 -> 4 [ label="" ];
-}

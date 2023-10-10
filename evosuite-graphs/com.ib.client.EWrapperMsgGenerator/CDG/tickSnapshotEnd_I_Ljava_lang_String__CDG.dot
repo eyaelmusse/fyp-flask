@@ -1,5 +1,0 @@
-digraph G {
-  1 [ label="BB154 T_BYTE ... ARETURN l422-l422" ];
-  2 [ label="EntryBlock for method tickSnapshotEnd(I)Ljava/lang/String;" ];
-  2 -> 1 [ label="" ];
-}
